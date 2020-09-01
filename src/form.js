@@ -6,14 +6,9 @@ class Form {
         this.form = document.createElement('form');
     }
 
-    render = () => {
-
-    }
-
     renderForm = () => {
         let inps = this.createInputs(3);
         this.appendToForm(inps);
-        this.form.addEventListener('submit', (event) => this.callb(event));
         this.parent.appendChild(this.form);
     }
 
@@ -30,7 +25,10 @@ class Form {
             input.type = 'text';
             inputs.push(input)
         }
-        let submit = document.createElement('submit');
+        let submit = document.createElement('button');
+        submit.innerText = "Submit";
+        submit.style.background = 'green';
+        submit.addEventListener('click', (event) => this.callb(event));
         inputs.push(submit);
         return inputs;
     }
