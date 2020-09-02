@@ -6,16 +6,17 @@ class Render{
         this.parent = parent;
     }
 
-    render(){
+    render = () =>{
+        debugger
         if (this.form === true){
            this.renderForm();
         } else {
-            this.renderImage()
+            this.renderImages();
         }
     }
 
     renderImages(){
-
+        debugger
     }
 
     renderForm(){
@@ -24,12 +25,17 @@ class Render{
         this.parent.appendChild(formContainer);
         let fm = new Form(formContainer, this.setImage);
         fm.renderForm();
-        
-        debugger;
     }
 
-    setImage(e){
-        debugger;
+    setImage = (images) =>{
+        
+        this.form = false
+        this.image = true
+         
+        this.images = images
+        this.render()
+        debugger
+        
     }
 }
 
