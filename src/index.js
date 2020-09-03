@@ -1,7 +1,7 @@
 class Render{
     constructor(parent){
-        this.form = true;
-        this.image = false;
+        this.form = false;
+        this.image = true;
         this.images = [];
         this.parent = parent;
     }
@@ -11,12 +11,14 @@ class Render{
         if (this.form === true){
            this.renderForm();
         } else {
+            this.images = fwimages
             this.renderImages();
         }
     }
 
     renderImages(){
-        debugger
+        let animator = new Animator(this.images)
+        animator.animate()
     }
 
     renderForm(){
@@ -35,7 +37,7 @@ class Render{
         this.images = images
         this.render()
         debugger
-        
+
     }
 }
 

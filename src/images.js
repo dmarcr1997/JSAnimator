@@ -1,0 +1,20 @@
+const fw1 = document.createElement('img')
+fw1.href = './media/fw1.jpg';
+const fw2 = document.createElement('img')
+fw2.href = './media/fw2.jpg';
+const fw3 = document.createElement('img')
+fw3.href = './media/fw3.jpg';
+const fw4 = document.createElement('img')
+fw4.href = './media/fw4.jpg';
+const fw5 = document.createElement('img')
+fw5.href = './media/fw5.jpg';
+const fw6 = document.createElement('img')
+fw6.href = './media/fw6.jpg';
+const fw7 = document.createElement('img')
+fw7.href = './media/fw7.jpg';
+const fw8 = document.createElement('img')
+fw8.href = './media/fw8.jpg';
+const fw9 = document.createElement('img')
+fw9.href = './media/fw9.jpg';
+
+const fwimages = [fw1, fw2, fw3, fw4, fw5, fw6, fw7, fw8, fw9]
